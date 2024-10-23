@@ -1,0 +1,60 @@
+/* Modal Overlay */
+.recruiter-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Container */
+  .recruiter-modal {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    z-index: 1001;
+  }
+  
+  /* Modal Header */
+  .recruiter-modal h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  /* Modal Text */
+  .recruiter-modal p {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Close Button */
+  .close-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Body Background Dim When Modal Is Open */
+  .modal-open {
+    overflow: hidden; /* Prevent scrolling */
+    background-color: rgba(0, 0, 0, 0.5); /* Dim the background */
+  }
+  

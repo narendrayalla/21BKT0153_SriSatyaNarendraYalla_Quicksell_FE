@@ -1,0 +1,177 @@
+/* Board and Columns */
+.kanban-board {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  
+  .kanban-column {
+    width: 300px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Group Header with icons */
+  .kanban-column-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread out icons and group name */
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .kanban-column-header h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 0 10px;
+    flex-grow: 1; /* Make the title occupy the available space */
+    text-align: center; /* Center the title */
+  }
+  
+  .kanban-column-header span {
+    font-size: 14px;
+    color: #888;
+    margin-left: 10px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .minus-icon {
+    margin-right: 5px;
+  }
+  
+  .plus-icon {
+    margin-left: 5px;
+  }
+  /* When no tickets are available, show a placeholder */
+.no-tickets {
+    padding: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  /* Recruiter Mode Button */
+.recruiter-mode {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .recruiter-mode:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
+  /* Cards */
+  .kanban-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Added transition for hover effect */
+  }
+  
+  .kanban-card:hover {
+    transform: scale(1.02); /* Slight hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
+  
+  .kanban-card h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .kanban-card p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .kanban-card .priority-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    transition: background-color 0.3s ease; /* Smooth background change on hover */
+  }
+  
+  .kanban-card:hover .priority-icon {
+    background-color: #f0f0f0; /* Change background color on hover */
+  }
+  
+  .kanban-card .user-avatar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .kanban-card .user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .kanban-card .tags {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .kanban-card .tags .tag {
+    background-color: #e0e0e0;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+  
+  .kanban-card .tags .priority {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Adding extra styles */
+  .kanban-column-header img.icon {
+    cursor: pointer;
+  }
+  
+  .kanban-column-header img.icon:hover {
+    transform: scale(1.1); /* Slight hover effect for icons */
+  }
+  
+  

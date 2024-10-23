@@ -1,0 +1,46 @@
+/* Dropdown container */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* The button for the dropdown */
+  .dropdown-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Dropdown menu styling */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 2;
+    width: 200px;
+  }
+  
+  /* Background overlay when dropdown is open */
+  .dropdown-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+    z-index: 1; /* Make sure it appears behind the dropdown menu */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* When the dropdown is open, set the background to grey */
+  .overlay-visible {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent grey */
+    z-index: 1;
+  }
+  
